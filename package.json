@@ -1,0 +1,12 @@
+{
+  "name": "plug-message-split",
+  "version": "0.0.0",
+  "description": "Splitting and word wrap utilities for plug.dj chat messages.",
+  "main": "index.js",
+  "scripts": {
+    "test": "node test.js"
+  },
+  "keywords": [],
+  "author": "Renée Kooi <renee@kooi.me>",
+  "license": "MIT"
+}
