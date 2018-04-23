@@ -1,15 +1,17 @@
 {
   "name": "plug-message-split",
-  "version": "1.0.1",
   "description": "Splitting and word wrap utilities for plug.dj chat messages.",
+  "version": "1.0.1",
+  "author": "Renée Kooi <renee@kooi.me>",
+  "bugs": "https://github.com/goto-bus-stop/plug-message-split/issues",
+  "homepage": "https://github.com/goto-bus-stop/plug-message-split",
+  "keywords": [
+    "plug.dj"
+  ],
+  "license": "MIT",
   "main": "index.js",
   "repository": "goto-bus-stop/plug-message-split",
   "scripts": {
     "test": "node test.js"
-  },
-  "keywords": [
-    "plug.dj"
-  ],
-  "author": "Renée Kooi <renee@kooi.me>",
-  "license": "MIT"
+  }
 }
