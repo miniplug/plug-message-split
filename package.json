@@ -5,6 +5,11 @@
   "author": "Renée Kooi <renee@kooi.me>",
   "bugs": "https://github.com/goto-bus-stop/plug-message-split/issues",
   "homepage": "https://github.com/goto-bus-stop/plug-message-split",
+  "files": [
+    "index.js",
+    "index.js.map",
+    "index.mjs"
+  ],
   "keywords": [
     "plug.dj"
   ],

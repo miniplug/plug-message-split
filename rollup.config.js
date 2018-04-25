@@ -3,6 +3,7 @@ export default {
   output: {
     format: 'cjs',
     exports: 'named',
-    file: 'index.js'
+    file: 'index.js',
+    sourcemap: true
   }
 }
