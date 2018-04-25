@@ -10,8 +10,19 @@
   ],
   "license": "MIT",
   "main": "index.js",
+  "module": "index.mjs",
   "repository": "goto-bus-stop/plug-message-split",
   "scripts": {
-    "test": "node test.js"
+    "build": "rollup -c",
+    "test": "standard && npm run build && node test.js"
+  },
+  "devDependencies": {
+    "rollup": "^0.58.2",
+    "standard": "^11.0.1"
+  },
+  "standard": {
+    "ignore": [
+      "index.js"
+    ]
   }
 }

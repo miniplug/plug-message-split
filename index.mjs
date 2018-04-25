@@ -1,9 +1,9 @@
-var MAX_LENGTH = 250
+export var MAX_LENGTH = 250
 
 /**
  * HTML-escape a string like plug.dj escapes chat messages.
  */
-function escape (message) {
+export function escape (message) {
   return message
     .replace(/"/g, '&#34;')
     .replace(/'/g, '&#39;')
@@ -15,7 +15,7 @@ function escape (message) {
 /**
  * Reverse plug.dj's chat message escaping.
  */
-function unescape (message) {
+export function unescape (message) {
   return message
     .replace(/&#34;/g, '"')
     .replace(/&#39;/g, '\'')
@@ -49,7 +49,7 @@ function byteLength (c) {
 /**
  * Truncate a string to fit inside a plug.dj chat message.
  */
-function truncate (string) {
+export function truncate (string) {
   var byteSize = 0
   for (var i = 0; i < string.length; i += 1) {
     var c = string.charCodeAt(i)
@@ -69,7 +69,7 @@ function truncate (string) {
  * Split a string into chunks that fit inside a plug.dj chat message. Splits on
  * characters, so it will break up words.
  */
-function splitRaw (string) {
+export function splitRaw (string) {
   var parts = []
   // Character index delimiting the current chunk
   var start = 0
@@ -98,7 +98,7 @@ function splitRaw (string) {
 /**
  * Split a string into chunks. Attempts to only split on whitespace.
  */
-function split (string) {
+export function split (string) {
   var words = string.split(/(\S+\s+)/g)
   var parts = []
   var part = ''
@@ -127,10 +127,3 @@ function split (string) {
 
   return parts
 }
-
-exports.MAX_LENGTH = MAX_LENGTH
-exports.escape = escape
-exports.unescape = unescape
-exports.truncate = truncate
-exports.splitRaw = splitRaw
-exports.split = split
