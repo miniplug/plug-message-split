@@ -19,7 +19,8 @@
   "repository": "goto-bus-stop/plug-message-split",
   "scripts": {
     "build": "rollup -c",
-    "test": "standard && npm run build && node test.js"
+    "test": "standard && npm run build && node test.js",
+    "prepare": "npm run build"
   },
   "devDependencies": {
     "rollup": "^0.58.2",
