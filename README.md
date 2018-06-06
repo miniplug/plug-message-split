@@ -1,5 +1,7 @@
 # plug-message-split
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/miniplug/plug-message-split.svg)](https://greenkeeper.io/)
+
 Reliable message splitting for plug.dj chat messages.
 
 ## Why?
