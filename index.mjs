@@ -69,7 +69,7 @@ export function truncate (string) {
  * Split a string into chunks that fit inside a plug.dj chat message. Splits on
  * characters, so it will break up words.
  */
-export function splitRaw (string) {
+export function splitChars (string) {
   var parts = []
   // Character index delimiting the current chunk
   var start = 0
@@ -98,7 +98,7 @@ export function splitRaw (string) {
 /**
  * Split a string into chunks. Attempts to only split on whitespace.
  */
-export function split (string) {
+export function splitWords (string) {
   var words = string.split(/(\S+\s+)/g)
   var parts = []
   var part = ''
@@ -127,3 +127,6 @@ export function split (string) {
 
   return parts
 }
+
+// Deprecated aliases
+export { splitChars as splitRaw, splitWords as split }

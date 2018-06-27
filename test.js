@@ -1,8 +1,8 @@
 var assert = require('tapsert')
 var m = require('./index')
 
-assert.strictEqual(m.splitRaw('Short and sweet').length, 1, 'Should not split short messages')
-assert.strictEqual(m.split('Short and sweet').length, 1, 'Should not split short messages')
+assert.strictEqual(m.splitChars('Short and sweet').length, 1, 'Should not split short messages')
+assert.strictEqual(m.splitWords('Short and sweet').length, 1, 'Should not split short messages')
 
 // Hangul characters are grouped by syllable, but each syllable contains
 // multiple letters and multiple bytes.
@@ -12,7 +12,7 @@ var hangulStr = '안영하세요 안영하세요 안영하세요 안영하세요
                 '안영하세요 안영하세요 안영하세요 안영하세요 안영하세요 안영하세요 안영하세요 ' +
                 '안영하세요 안영하세요'
 
-var result = m.splitRaw(hangulStr)
+var result = m.splitChars(hangulStr)
 assert.strictEqual(result[0],
   '안영하세요 안영하세요 안영하세요 안영하세요 안영하세요 안영하세요 안영하세요 ' +
   '안영하세요 안영하세요 안영하세요 안영하세요 안영하세요 안영하세요 안영하세요 ' +
@@ -24,7 +24,7 @@ assert.strictEqual(result[1],
   'Should put the remaining full characters in a new chunk'
 )
 
-result = m.split(hangulStr)
+result = m.splitWords(hangulStr)
 assert.strictEqual(result[0],
   '안영하세요 안영하세요 안영하세요 안영하세요 안영하세요 안영하세요 안영하세요 ' +
   '안영하세요 안영하세요 안영하세요 안영하세요 안영하세요 안영하세요 안영하세요 ' +
