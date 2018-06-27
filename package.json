@@ -24,7 +24,8 @@
   },
   "devDependencies": {
     "rollup": "^0.66.0",
-    "standard": "^12.0.0"
+    "standard": "^12.0.0",
+    "tapsert": "^2.0.0"
   },
   "standard": {
     "ignore": [

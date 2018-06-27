@@ -1,4 +1,4 @@
-var assert = require('assert')
+var assert = require('tapsert')
 var m = require('./index')
 
 assert.strictEqual(m.splitRaw('Short and sweet').length, 1, 'Should not split short messages')
@@ -45,5 +45,3 @@ assert.strictEqual(
   62,
   'Should truncate before the last >'
 )
-
-console.log('ok')
