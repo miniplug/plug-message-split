@@ -23,7 +23,7 @@
     "prepare": "npm run build"
   },
   "devDependencies": {
-    "rollup": "^0.63.0",
+    "rollup": "^0.64.0",
     "standard": "^11.0.1"
   },
   "standard": {
