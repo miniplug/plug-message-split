@@ -14,8 +14,14 @@
     "plug.dj"
   ],
   "license": "MIT",
-  "main": "index.js",
-  "module": "index.mjs",
+  "main": "./index.js",
+  "module": "./index.mjs",
+  "exports": {
+    ".": {
+      "import": "./index.mjs",
+      "require": "./index.js"
+    }
+  },
   "repository": "miniplug/plug-message-split",
   "scripts": {
     "build": "rollup -c",
