@@ -1,7 +1,7 @@
 {
   "name": "plug-message-split",
   "description": "Splitting and word wrap utilities for plug.dj chat messages.",
-  "version": "1.1.1",
+  "version": "2.0.0",
   "author": "Renée Kooi <renee@kooi.me>",
   "bugs": "https://github.com/miniplug/plug-message-split/issues",
   "homepage": "https://github.com/miniplug/plug-message-split",
